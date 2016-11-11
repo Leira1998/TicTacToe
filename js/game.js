@@ -1,5 +1,6 @@
 // ****************************************************************
 //
+// TicTacToe
 // game.js
 // Author: Fernando Leira
 //
@@ -20,7 +21,6 @@ function has_mark(box_id){
 function move(box_id, turn){
   var $idS = $('#' + box_id.toString());
   var letter;
-
 
   if (turn) {
     letter = 'X';
