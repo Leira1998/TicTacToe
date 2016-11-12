@@ -15,8 +15,8 @@ class GridBoard {
 
   make_board(){
     var board = document.createElement('div');
-    var board_width = this.width + 2 * this.x;
-    var board_height = this.height + 2 * this.y;
+    var board_width = this.width + 2.75 * this.x;
+    var board_height = this.height + 2.75 * this.y;
 
     board.className = "board";
     Object.assign(board.style, {

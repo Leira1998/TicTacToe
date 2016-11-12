@@ -1,7 +1,13 @@
+body {
+  background-color: #1FD05A;
+}
+
 .board {
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 
@@ -9,35 +15,36 @@
   position: relative;
   float: left;
   margin: 1px;
-  background-color: red;
-  border-radius: 5px;
+  background-color: #1F74D0;
   cursor: pointer;
   text-align: center;
+  border-radius: 5px;
 }
 
 .box p {
   position: relative;
   top: 50%;
   margin-top: -85px;
-  font-size: 120px;
+  font-size: 125px;
   font-family: 'Arial';
-  color: #333;
+  font-weight: bold;
+  color: #1FD05A;
 }
 
 .over {
   position: absolute;
   top: 50%;
-  margin-top: -200px;
+  margin-top: -175px;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -175px;
 
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
 
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
-  background-color: red;
+  background-color: #1F74D0;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 20px;
@@ -47,25 +54,25 @@
 .over h1 {
   margin: 0px;
   font-size: 32px;
-  color: snow;
+  color: #fff;
 }
 
 .over p {
-  padding: 45px 0px 5px 0px;
+  margin-top: 40px;
+  margin-bottom: 15px;
   font-size: 22px;
   font-family: 'Arial';
-  color: snow;
+  color: #fff;
 }
 
 .over button {
-  margin-top: 35px;
+  margin-top: 25px;
 
   width: 150px;
   height: 45px;
-  background-color: snow;
+  background-color: #fff;
 
   font-family: 'Arial';
   font-size: 18px;
-  color: #555;
-  opacity: 1;
+  color: #1F74D0;
 }

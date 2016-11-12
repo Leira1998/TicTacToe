@@ -52,7 +52,7 @@ function check_gameOver(){
     class2 = $('#' + id2.toString()).attr('class');
     class3 = $('#' + id3.toString()).attr('class');
 
-    if ((class1 != 'box' && class2 != 'box' && class3 != 'box') && (class1 == class2 && class1 == class3)) {
+    if (class1 != 'box' && (class1 == class2 && class1 == class3)) {
       win = true;
     }
   }
@@ -66,7 +66,7 @@ function check_gameOver(){
     class2 = $('#' + id2.toString()).attr('class');
     class3 = $('#' + id3.toString()).attr('class');
 
-    if ((class1 != 'box' && class2 != 'box' && class3 != 'box') && (class1 == class2 && class1 == class3)) {
+    if (class1 != 'box' && (class1 == class2 && class1 == class3)) {
       win = true;
     }
   }
@@ -78,7 +78,7 @@ function check_gameOver(){
   class1 = $('#' + id1.toString()).attr('class');
   class2 = $('#' + id2.toString()).attr('class');
   class3 = $('#' + id3.toString()).attr('class');
-  if ((class1 != 'box' && class2 != 'box' && class3 != 'box') && (class1 == class2 && class1 == class3)) {
+  if (class1 != 'box' && (class1 == class2 && class1 == class3)) {
     win = true;
   }
 
@@ -88,7 +88,7 @@ function check_gameOver(){
   class1 = $('#' + id1.toString()).attr('class');
   class2 = $('#' + id2.toString()).attr('class');
   class3 = $('#' + id3.toString()).attr('class');
-  if ((class1 != 'box' && class2 != 'box' && class3 != 'box') && (class1 == class2 && class1 == class3)) {
+  if (class1 != 'box' && (class1 == class2 && class1 == class3)) {
     win = true;
   }
 
@@ -120,11 +120,23 @@ function setText(points1, points2, winner){
   }
 
   $('.result_text').text(winner_text);
-  $('.score1').text('Player 1 Score: ' + points1.toString());
-  $('.score2').text('Player 2 Score: ' + points2.toString());
+  $('.score1').text('Player 1: ' + points1.toString());
+  $('.score2').text('Player 2: ' + points2.toString());
 }
 
-var GameBoard = new GridBoard(3, 3, 600, 600);
+var window_height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+var window_width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var grid_size;
+if (window_height < window_width) grid_size = window_height * .8;
+else grid_size = window_width * .8;
+
+var GameBoard = new GridBoard(3, 3, grid_size, grid_size);
 
 var turn1;
 var points1 = 0;
