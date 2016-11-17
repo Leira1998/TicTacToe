@@ -1,0 +1,19 @@
+{
+  "name": "tictactoe",
+  "version": "1.1.0",
+  "description": "Personal tic-tac-toe game.",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leira1998/TicTacToe.git"
+  },
+  "author": "Fernando Leira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leira1998/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/Leira1998/TicTacToe#readme"
+}

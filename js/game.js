@@ -6,6 +6,8 @@
 //
 // ****************************************************************
 
+var $ = require('jQuery');
+
 function has_mark(box_id){
   var $idS = $('#' + box_id.toString());
   var child = $idS.children();
