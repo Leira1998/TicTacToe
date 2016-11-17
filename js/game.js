@@ -124,17 +124,7 @@ function setText(points1, points2, winner){
   $('.score2').text('Player 2: ' + points2.toString());
 }
 
-var window_height = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
-
-var window_width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-
-var grid_size;
-if (window_height < window_width) grid_size = window_height * .8;
-else grid_size = window_width * .8;
+var grid_size = 450;
 
 var GameBoard = new GridBoard(3, 3, grid_size, grid_size);
 
