@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Leira1998/TicTacToe/issues"
   },
-  "homepage": "https://github.com/Leira1998/TicTacToe#readme"
+  "homepage": "https://github.com/Leira1998/TicTacToe#readme",
+  "dependencies": {
+    "electron": "1.4.7"
+  }
 }
